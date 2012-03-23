@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+body{background:#03070a;}
+#main{background: #151f2b url("img/man.png");width:455px; height:357px;text-align:center;margin:auto;position:relative;}
+
+@keyframes myfirst
+{
+	from {
+			transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg); /* Safari and Chrome */
+			-moz-transform: rotateY(0deg); /* Firefox */
+		}
+	to 	{
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); /* Safari and Chrome */
+			-moz-transform: rotateY(180deg); /* Firefox */
+		}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+	from {
+			transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg); /* Safari and Chrome */
+			-moz-transform: rotateY(0deg); /* Firefox */
+		}
+	to 	{
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); /* Safari and Chrome */
+			-moz-transform: rotateY(180deg); /* Firefox */
+		}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	from {
+			transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg); /* Safari and Chrome */
+			-moz-transform: rotateY(0deg); /* Firefox */
+		}
+	to 	{
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); /* Safari and Chrome */
+			-moz-transform: rotateY(180deg); /* Firefox */
+		}
+} 
+
+.cups div{background:red;position:absolute;}
+
+.cups div{
+	animation: myfirst .6s;
+	-moz-animation: myfirst .6s; /* Firefox */
+	-moz-animation-iteration-count:infinite;
+	-webkit-animation: myfirst .6s; /* Safari and Chrome */
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+#cup1{background: #263242 url("img/1.png");width:40px; height:91px;top:51px;left:65px;}
+#cup2{background: #263242 url("img/2.png");width:44px; height:88px;top:142px;left:61px;}
+#cup3{background: #263242 url("img/3.png");width:40px; height:91px;top:36px;left:113px;}
+#cup4{background: #263242 url("img/4.png");width:44px; height:88px;top:121px;left:110px;}
+#cup5{background: #263242 url("img/5.png");width:40px; height:53px;top:205px;left:115px;}
+#cup6{background: #263242 url("img/6.png");width:44px; height:95px;top:64px;left:188px;}
+#cup7{background: #263242 url("img/7.png");width:40px; height:91px;top:158px;left:190px;}
+#cup8{background: #263242 url("img/8.png");width:44px; height:38px;top:109px;left:242px;}
+#cup9{background: #263242 url("img/9.png");width:40px; height:121px;top:23px;left:301px;}
+#cup10{background: #263242 url("img/10.png");width:44px; height:88px;top:140px;left:298px;}
+#cup11{background: #263242 url("img/11.png");width:40px; height:118px;top:80px;left:353px;}
+
+#cup2{-webkit-animation-delay:.1s;-moz-animation-delay:.1s;}
+#cup3{-webkit-animation-delay:.2s;-moz-animation-delay:.2s;}
+#cup4{-webkit-animation-delay:.3s;-moz-animation-delay:.3s;}
+#cup5{-webkit-animation-delay:.4s;-moz-animation-delay:.4s;}
+#cup6{-webkit-animation-delay:.5s;-moz-animation-delay:.5s;}
+#cup7{-webkit-animation-delay:.6s;-moz-animation-delay:.6s;}
+#cup8{-webkit-animation-delay:.7s;-moz-animation-delay:.7s;}
+#cup9{-webkit-animation-delay:.8s;-moz-animation-delay:.8s;}
+#cup10{-webkit-animation-delay:.9s;-moz-animation-delay:.9s;}
+#cup11{-webkit-animation-delay:.10s;-moz-animation-delay:.10s;}
+</style>
+</head>
+
+<body>
+<div id="main">
+	<div class="cups">
+		<div id="cup1"></div>
+		<div id="cup2"></div>
+		<div id="cup3"></div>
+		<div id="cup4"></div>
+		<div id="cup5"></div>
+		<div id="cup6"></div>
+		<div id="cup7"></div>
+		<div id="cup8"></div>
+		<div id="cup9"></div>
+		<div id="cup10"></div>
+		<div id="cup11"></div>
+	</div>
+</div>
+
+
+</body>
+</html>
